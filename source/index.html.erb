@@ -1,0 +1,19 @@
+---
+title: Welly Risks
+---
+<form action='#' class="form-search well">
+  <label for='address'>Address:</label>
+  <input id='address' name='address' placeholder="start typing an address" type="text" class="input-xlarge search-query">
+  <button type="submit" class="btn btn-primary">Search</button>
+</form>
+<div id="topnav"></div>
+<div id="mapdiv"></div>
+<div id="result_panel"></div>
+
+<% content_for :javascript do %>
+<script type="text/javascript">
+  Risks.App.addInitializer(function(){
+    this.layers.reset(<%= data.layers.to_json %>);
+  });
+</script>
+<% end %>

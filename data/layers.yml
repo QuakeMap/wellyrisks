@@ -1,0 +1,117 @@
+-
+  code: tsunami
+  short_title: Tsunami
+  name: Wellington Region Tsunami Evacuation Zones
+  koordinates_id: 4025
+  fusion_id: 198KWk--DcvzTEPiG-pOZS6TwnDVDkvKrC3mVN50
+  map_style:
+    - polygonOptions:
+        fillOpacity: 0.5
+        strokeOpacity: 0.2
+    - where: "Zone_Class = 3"
+      polygonOptions:
+        fillColor: "#FFFFB2"
+    - where: "Zone_Class = 2"
+      polygonOptions:
+        fillColor: "#FD8D3C"
+    - where: "Zone_Class = 1"
+      polygonOptions:
+        fillColor: "#BD0026"
+-
+  code: ground_shaking
+  short_title: Ground Shaking
+  name: Wellington Region ground shaking hazard zones
+  koordinates_id: 4070
+  fusion_id: 1_zb53tpo11MnZAYG38hD2b80N9tP28X2dBRDyDs
+  map_style:
+  - where: "ZONE = 5.0"
+    polygonOptions:
+      fillColor: "#BD0026"
+      fillOpacity: 0.5
+      strokeOpacity: 0.2
+  - where: "ZONE = 4.0"
+    polygonOptions:
+      fillColor: "#F03B20"
+      fillOpacity: 0.5
+      strokeOpacity: 0.2
+  - where: "ZONE = 3.0"
+    polygonOptions:
+      fillColor: "#FD8D3C"
+      fillOpacity: 0.5
+      strokeOpacity: 0.2
+  - where: "ZONE = 2.0"
+    polygonOptions:
+      fillColor: "#FECC5C"
+      fillOpacity: 0.5
+      strokeOpacity: 0.2
+  - where: "ZONE = 1.0"
+    polygonOptions:
+      fillColor: "#FFFFB2"
+      fillOpacity: 0.5
+      strokeOpacity: 0.2
+-
+  code: slope_failure
+  short_title: Slope Failure
+  name: Wellington Region Earthquake Induced Slope Failure
+  koordinates_id: 4069
+  fusion_id: 1wFXtbVlnHbGstazW_8cLIQldvnsH8Ze6Bn3dU9Q
+  map_style:
+  - where: "LSKEY = 1"
+    polygonOptions:
+      fillColor: "#BD0026"
+      fillOpacity: 0.5
+      strokeOpacity: 0.2
+  - where: "LSKEY = 2"
+    polygonOptions:
+      fillColor: "#F03B20"
+      fillOpacity: 0.5
+      strokeOpacity: 0.2
+  - where: "LSKEY = 3"
+    polygonOptions:
+      fillColor: "#FD8D3C"
+      fillOpacity: 0.5
+      strokeOpacity: 0.2
+  - where: "LSKEY = 4"
+    polygonOptions:
+      fillColor: "#FECC5C"
+      fillOpacity: 0.5
+      strokeOpacity: 0.2
+  - where: "LSKEY = 5"
+    polygonOptions:
+      fillColor: "#FFFFB2"
+      fillOpacity: 0.5
+      strokeOpacity: 0.2
+
+-
+  code: liquefaction
+  short_title: Liquefaction Potential
+  name: Wellington Region Liquefaction Potential
+  koordinates_id: 4068
+  fusion_id: 1NmEDa09BqCXoM9GZFDfjsLfpJZTekXmuW2COkpc
+  condition: "'SED_CODE' NOT EQUAL TO 9"
+  map_style:
+    - polygonOptions:
+        fillOpacity: 0.5
+        strokeOpacity: 0.2
+    - where: "SED_CODE = 1"
+      polygonOptions:
+        fillColor: "#F03B20"
+    - where: "SED_CODE = 2"
+      polygonOptions:
+        fillColor: "#FEB24C"
+    - where: "SED_CODE = 3"
+      polygonOptions:
+        fillColor: "#FFEDA0"
+    - where: "SED_CODE = 4"
+      polygonOptions:
+        fillColor: "#1F78B4"
+-
+  code: civil_defence
+  short_title: Civil Defence Centres
+  name: "Wellington & Porirua Civil Defence Centres"
+  fusion_id: 1cSszN6CaW1QiRV8ABs8eSoXF8YKFDgyjKZa7PxY
+  map_style:
+    - markerOptions:
+        iconName: "small_blue"
+
+
